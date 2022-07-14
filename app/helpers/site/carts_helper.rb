@@ -1,0 +1,2 @@
+module Site::CartsHelper
+end

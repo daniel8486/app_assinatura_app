@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title> </title>
+    </head>
+    <style> 
+      html, body{
+        padding: 0;
+        margin: 0;
+        height: 100%;
+      }
+
+      .container{
+        display: grid;
+      }
+
+      section{
+         width: 100%
+      }
+
+      .logo_branco{
+        position: absolute;
+        width: 70%;
+        top: 9%;
+        left: 18%;
+        right: 15%;
+      }
+      
+      .text-center{
+        text-align: center;
+        font-weight: bold;
+      }
+      .text-center_vend{
+        text-align: center;
+      }
+      
+      p{
+        font-size: 4rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 0;
+        color: #58595B;
+        border-color: 10px solid #000;
+        font-size: 60px;
+      }
+
+      .icones {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+      }
+
+      .icones a { 
+        padding: 0px;
+      }
+
+      .icones a img{
+       widows: 100%;
+      }
+
+      .footer{
+        /*position: absolute;*/
+        bottom: 0;
+        width: 100%;
+      }
+
+      .dedo{
+        text-align: center;
+      }
+
+      .bot{
+        margin-top: -190px;
+        margin-left: 80%;
+      }
+
+      @media (max-width: 868px) {
+        .curved-div ~ .footer{
+          display: inline-flex;
+          position: fixed;
+        }
+
+      }
+
+
+      @media print { 
+
+        @page {
+        size: auto;
+        }
+
+        html, body{
+        padding: 0;
+        margin: 0;
+        height: 50%;
+        /*size: 30%;*/
+        /*size: A4 portrait; not */
+        /*orientation: landscape; */
+      }
+
+      .container{
+        display: grid;
+      }
+
+      section{
+         width: 100%;
+      }
+
+      .logo_branco{
+        position: absolute;
+        width: 50%;
+        top: 5%;
+        left: 35%;
+        right: 15%;
+      }
+      
+      .text-center{
+        text-align: center;
+        font-weight: bold;
+      }
+      .text-center_vend{
+        text-align: center;
+      }
+      
+      p{
+        font-size: 4rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 0;
+        color: #58595B;
+        border-color: 10px solid #000;
+        font-size: 60px;
+      }
+
+      .icones {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+      }
+
+      .icones a { 
+        padding: 0px;
+      }
+
+      .icones a img{
+       widows: 100%;
+      }
+
+      .footer{
+        /*position: absolute;*/
+        bottom: 0;
+        width: 100%;
+      }
+
+      .dedo{
+        text-align: center;
+      }
+
+    }
+
+    </style>
+     
+    <body> 
+        <div class="container">  
+          <div class="curved-div upper" >
+              <svg viewBox="0 0 1280 800">
+                <path fill="#09337a" fill-opacity="1" d="M 1280 5 L 1280 654 C 615 697 345 758 2 246 L 1 1 c 21 0 21 0 1280 1">
+                </path>
+              </svg>
+              <%= image_tag("pintos.png",class: 'img logo_branco')%>
+            </div> 
+
+            <section> 
+            
+              <div>
+                <p class="text-center"> 
+                 <%= @name %>
+                </p>
+              </div>
+              <div>
+                <p class="text-center_vend"> 
+                 <%= @cargo %>
+                </p>
+              </div> 
+
+              <div class="icones"> 
+
+                <%= phone_to @phone do %>
+                 <%= image_tag("telefone_png_01.png",class: 'icones a img') %>
+                <% end %>
+
+                <%= mail_to @email do %>
+                 <%= image_tag("email_png_01.png", class: 'icones a img') %>
+                 <% end %> 
+                 
+                 <%= link_to image_tag("whats_png_01.png", class: 'icones a img'), " https://wa.me/55#{@phone}"  %>
+                 <%= link_to image_tag("insta_png_2_01.png", class: 'icones a img'), "https://www.instagram.com/lojaspintos/"%>
+              
+                </div> 
+                
+              
+              <div class="dedo">
+                <%= link_to image_tag('dedo_01_01.png', class: 'dedo',onclick: 'printPage()') %>
+              </div>
+     
+            </section>
+
+            <div class="curved-div footer">
+              <svg viewBox="0 0 1280 290">
+                <path fill="#09337a" fill-opacity="1" d="M 1278 298 C 385 280 387 86 2 3 L 1 298 c 21 0 21 0 1280 1"></path>
+              </svg>
+              <div class="bot">
+                
+                <%= link_to image_tag("virtual.png", class: 'wc-greeting-image', 
+                style: 'outline: none; display: flex; justify-content: center; 
+                align-items: center;bottom: 0; right: 0; height: 10rem; width: 10rem; 
+                -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5); 
+                -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5); 
+                box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5); border-radius: 150px; 
+                margin: 15px; z-index: 10000; cursor: pointer; overflow: hidden; 
+                border: 2px solid #006BE2; background-color: #006BE2; padding: 0;'),"https://wa.me/558621074000" %>
+
+                <div class="dedo">
+                   <!--<img src="{{ asset('imagens/fale_com.png') }}" alt="" />-->
+                </div>
+              </div>
+            </div>
+        </div>  
+      
+        <script> 
+         function printPage() {
+           window.print()
+         } 
+          
+        </script>
+
+    </body>
+
+   
+
+</html>
