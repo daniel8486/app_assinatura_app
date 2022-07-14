@@ -14,3 +14,5 @@ ActiveStorage.start()
 
 import "bootstrap";
 import "jquery";
+
+require('../../assets/stylesheets/application.css.scss');
