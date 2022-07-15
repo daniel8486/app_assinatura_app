@@ -5,5 +5,6 @@ class Site::CartsController < ApplicationController
     @cargo = session[:cargo]
     @phone = session[:phone]
     @email = session[:email]
+
   end
 end

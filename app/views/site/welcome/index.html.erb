@@ -15,7 +15,8 @@
       }
 
       section{
-         width: 100%
+         width: 100%;
+         padding: auto;
       }
 
       .logo_branco{
@@ -40,7 +41,7 @@
         margin: 0;
         color: #58595B;
         border-color: 10px solid #000;
-        font-size: 60px;
+        font-size: 20px;
       }
 
       .icones {
@@ -58,7 +59,6 @@
       }
 
       .footer{
-        /*position: absolute;*/
         bottom: 0;
         width: 100%;
       }
@@ -71,11 +71,84 @@
       @media (min-width: 768px) {
         .curved-div ~ .footer{
           display: inline-flex;
-          position: fixed;
         }
 
       } 
 
+      @media print { 
+
+      @page {
+      size: auto;
+      }
+      
+      html, body{
+      padding: 0;
+      margin: 0;
+      height: 50%;
+      /*size: 30%;*/
+      /*size: A4 portrait; not */
+      /*orientation: landscape; */
+      }
+      
+      .container{
+      display: grid;
+      }
+      
+      section{
+       width: 100%;
+      }
+      
+      .logo_branco{
+      position: absolute;
+      width: 50%;
+      top: 5%;
+      left: 35%;
+      right: 15%;
+      }
+      
+      .text-center{
+      text-align: center;
+      font-weight: bold;
+      }
+      .text-center_vend{
+      text-align: center;
+      }
+      
+      p{
+      font-size: 4rem;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin: 0;
+      color: #58595B;
+      border-color: 10px solid #000;
+      font-size: 60px;
+      }
+      
+      .icones {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      }
+      
+      .icones a { 
+      padding: 0px;
+      }
+      
+      .icones a img{
+      widows: 100%;
+      }
+      
+      .footer{
+      /*position: absolute;*/
+      bottom: 0;
+      width: 100%;
+      }
+      
+      .dedo{
+      text-align: center;
+      }
+      
+      }
+      
       
 
     </style>
@@ -124,7 +197,7 @@
 
               <% end %>
      
-            </section>
+            </section> 
 
             <div class="curved-div footer">
               <svg viewBox="0 0 1280 290">
@@ -133,6 +206,12 @@
               
             </div>
         </div>  
+
+        <script> 
+          
+
+
+        </script>
     
     </body>
 

@@ -72,7 +72,7 @@
         margin-left: 80%;
       }
 
-      @media (max-width: 868px) {
+      @media (max-width: 400px) {
         .curved-div ~ .footer{
           display: inline-flex;
           position: fixed;
@@ -197,7 +197,7 @@
                 
               
               <div class="dedo">
-                <%= link_to image_tag('dedo_01_01.png', class: 'dedo',onclick: 'printPage()') %>
+                <%= image_tag('dedo_01_01.png', class: 'dedo') %>
               </div>
      
             </section>
@@ -228,7 +228,7 @@
          function printPage() {
            window.print()
          } 
-          
+         printPage();
         </script>
 
     </body>
