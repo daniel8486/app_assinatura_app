@@ -1,5 +1,4 @@
 class Site::WelcomeController < ApplicationController
-  require "pdfkit"
 
   def index
     if params[:commit].to_s == "Gerar"
@@ -31,11 +30,11 @@ class Site::WelcomeController < ApplicationController
 
 
   def print 
-    def download_pdf
-      html = render_to_string(:action => '../pdf/my_template', :layout => false)
-      pdf = PDFKit.new(html)
-      send_data(pdf.to_pdf)
-    end
+    #def download_pdf
+    #  html = render_to_string(:action => '../pdf/my_template', :layout => false)
+    #  pdf = PDFKit.new(html)
+    #  send_data(pdf.to_pdf)
+    #end
   end
 
 end
