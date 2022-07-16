@@ -163,8 +163,8 @@
     </style>
      
     <body> 
-        <div class="container">  
-          <div class="curved-div upper">
+        <div class="container" style="border: 1px solid #000;">  
+          <div class="curved-div upper" style="border: 1px solid #000; height:590px;">
             <svg viewBox="0 0 1280 800">
               <path fill="#09337a" fill-opacity="1" d="M 1280 5 L 1280 654 C 615 697 345 758 2 246 L 1 1 c 21 0 21 0 1280 1">
               </path>
@@ -172,21 +172,23 @@
             <%= image_tag("pintos.png",class: 'img logo_branco')%>
           </div> 
           
-            <section> 
+          
+            <section style="border:1px solid #000;"> 
             
-              <div>
+              <div style="border: 1px solid #000;">
                 <p class="text-center"> 
                  <%= @name %>
                 </p>
               </div>
-              <div>
+
+              <div style="border: 1px solid #000;">
                 <p class="text-center_vend"> 
                  <%= @cargo %>
                 </p>
               </div> 
 
-              <div class="icones"> 
-
+              <div class="icones" style="border: 1px solid #000;"> 
+                
                 <%= phone_to @phone do %>
                  <%= image_tag("telefone_png_01.png",class: 'icones a img') %>
                 <% end %>
@@ -198,7 +200,9 @@
                  <%= link_to image_tag("whats_png_01.png", class: 'icones a img'), " https://wa.me/55#{@phone}"  %>
                  <%= link_to image_tag("insta_png_2_01.png", class: 'icones a img'), "https://www.instagram.com/lojaspintos/"%>
               
-                </div> 
+              </div> 
+
+              
                 
               
               <div class="dedo">

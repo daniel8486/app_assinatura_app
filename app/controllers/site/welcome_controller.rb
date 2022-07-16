@@ -1,4 +1,6 @@
 class Site::WelcomeController < ApplicationController
+  require "pdfkit"
+
   def index
     if params[:commit].to_s == "Gerar"
       puts "chamando parametros" 
@@ -26,4 +28,14 @@ class Site::WelcomeController < ApplicationController
     return site_welcome_index_path, notice: 'Tudo Certo'
   end
   end
+
+
+  def print 
+    def download_pdf
+      html = render_to_string(:action => '../pdf/my_template', :layout => false)
+      pdf = PDFKit.new(html)
+      send_data(pdf.to_pdf)
+    end
+  end
+
 end
