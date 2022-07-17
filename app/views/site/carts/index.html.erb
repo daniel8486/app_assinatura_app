@@ -163,8 +163,8 @@
     </style>
      
     <body> 
-        <div class="container" style="border: 1px solid #000;">  
-          <div class="curved-div upper" style="border: 1px solid #000; height:590px;">
+        <div class="container">  
+          <div class="curved-div upper">
             <svg viewBox="0 0 1280 800">
               <path fill="#09337a" fill-opacity="1" d="M 1280 5 L 1280 654 C 615 697 345 758 2 246 L 1 1 c 21 0 21 0 1280 1">
               </path>
@@ -173,21 +173,21 @@
           </div> 
           
           
-            <section style="border:1px solid #000;"> 
+            <section> 
             
-              <div style="border: 1px solid #000;">
+              <div>
                 <p class="text-center"> 
                  <%= @name %>
                 </p>
               </div>
 
-              <div style="border: 1px solid #000;">
+              <div >
                 <p class="text-center_vend"> 
                  <%= @cargo %>
                 </p>
               </div> 
 
-              <div class="icones" style="border: 1px solid #000;"> 
+              <div class="icones"> 
                 
                 <%= phone_to @phone do %>
                  <%= image_tag("telefone_png_01.png",class: 'icones a img') %>
@@ -232,15 +232,12 @@
               </div>
             </div>
         </div>  
-      
-        <script> 
-         function printPage() {
-           window.print()
-         } 
-        </script>
+       
+      <script> 
+        function printPage(){ 
+          window.print()
+        }
+      </script>  
 
-    </body>
-
-   
-
-</html>
+        </body>
+        </html>
