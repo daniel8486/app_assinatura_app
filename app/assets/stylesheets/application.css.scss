@@ -86,12 +86,10 @@ html, body{
 
     @page {
       /*size: 4in 6in landscape;*/
-      size: 8.5in 11in portrait;
+      /* size: 8.5in 11in portrait; */
+      size: 0mm 7,5mm 18mm 0mm;
     }
-    .widows {
-     widows:2;
-    }
-
+    
     html, body{
       padding: 0;
       margin: 0;
