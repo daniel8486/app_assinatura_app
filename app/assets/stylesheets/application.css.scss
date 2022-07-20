@@ -59,9 +59,12 @@ html, body{
     width: 100%;
   }
 
-  .dedo{
+  div.dedo{
     text-align: center;
-    width: 72%;
+  }
+
+  img.dedo{
+    width: 50%;
   }
 
   .bot{
@@ -87,7 +90,7 @@ html, body{
     @page {
       /*size: 4in 6in landscape;*/
       /* size: 8.5in 11in portrait; */
-      size: 0mm 7,5mm 18mm 0mm;
+      size: 0mm 13,5mm 13,5mm 0mm;
     }
     
     html, body{
@@ -149,9 +152,12 @@ html, body{
       width: 100%;
     }
   
-    .dedo{
+    div.dedo{
       text-align: center;
-      width: 72%;
+    }
+  
+    img.dedo{
+      width: 50%;
     }
   
     .bot{
