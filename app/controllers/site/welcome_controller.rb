@@ -1,4 +1,5 @@
 class Site::WelcomeController < ApplicationController
+  #require "pdfkit"
 
   def index
     if params[:commit].to_s == "Gerar"
@@ -22,10 +23,12 @@ class Site::WelcomeController < ApplicationController
        params[:email].nil? != true &&
        params[:phone].nil? != true
        
-    redirect_to site_carts_index_path , notice: 'Preencha os Dados'
+       redirect_to site_carts_index_path , notice: 'Preencha os Dados'
   else 
     return site_welcome_index_path, notice: 'Tudo Certo'
   end
+
+
   end
 
 

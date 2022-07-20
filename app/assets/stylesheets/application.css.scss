@@ -1,1 +1,156 @@
 @import 'bootstrap/scss/bootstrap';
+
+html, body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+  }
+
+  .container{
+    display: grid;
+  }
+
+  section{
+     width: 100%
+  }
+
+  .logo_branco{
+    position: absolute;
+    width: 70%;
+    top: 9%;
+    left: 18%;
+    right: 15%;
+  }
+  
+  .text-center{
+    text-align: center;
+    font-weight: bold;
+  }
+  .text-center_vend{
+    text-align: center;
+  }
+  
+  p{
+    font-size: 4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    color: #58595B;
+    border-color: 10px solid #000;
+    font-size: 60px;
+  }
+
+  .icones {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .icones a { 
+    padding: 0px;
+  }
+
+  .icones a img{
+   widows: 100%;
+  }
+
+  .footer{
+    /*position: absolute;*/
+    bottom: 0;
+    width: 100%;
+  }
+
+  .dedo{
+    text-align: center;
+  }
+
+  .bot{
+    margin-top: -190px;
+    margin-left: 80%;
+  }
+
+  @media (max-width: 468px) {
+    .curved-div ~ .footer{
+      display: inline-flex;
+      position: fixed;
+    }
+
+  }
+
+
+  @media print { 
+
+    @page {
+      /*size: 4in 6in landscape;*/
+      size: 8.5in 11in portrait;
+    }
+    .widows {
+     widows:2;
+    }
+
+    html, body{
+    padding: 0;
+    margin: 0;
+    height: 50%;
+    /*size: 30%;*/
+    /*size: A4 portrait; not */
+    /*orientation: landscape; */
+  }
+
+  .container{
+    display: grid;
+  }
+
+  section{
+     width: 100%;
+  }
+
+  .logo_branco{
+    position: absolute;
+    width: 50%;
+    top: 5%;
+    left: 35%;
+    right: 15%;
+  }
+  
+  .text-center{
+    text-align: center;
+    font-weight: bold;
+  }
+  .text-center_vend{
+    text-align: center;
+  }
+  
+  p{
+    font-size: 4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    color: #58595B;
+    border-color: 10px solid #000;
+    font-size: 40px;
+  }
+
+  .icones {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .icones a { 
+    padding: 0px;
+  }
+
+  .icones a img{
+   widows: 90%;
+  }
+
+  .footer{
+    /*position: absolute;*/
+    bottom: 0;
+    width: 100%;
+  }
+
+  .dedo{
+    text-align: center;
+  }
+
+}

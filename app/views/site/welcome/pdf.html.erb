@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title> </title>
+    </head>
+    <style> 
+      html, body{
+        padding: 0;
+        margin: 0;
+        height: 100%;
+      }
+
+      .container{
+        display: grid;
+      }
+
+      section{
+         width: 100%
+      }
+
+      .logo_branco{
+        position: absolute;
+        width: 70%;
+        top: 9%;
+        left: 18%;
+        right: 15%;
+      }
+      
+      .text-center{
+        text-align: center;
+        font-weight: bold;
+      }
+      .text-center_vend{
+        text-align: center;
+      }
+      
+      p{
+        font-size: 4rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 0;
+      }
+
+      .icones {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+      }
+
+      .icones a { 
+        padding: 0px;
+      }
+
+      .icones a img{
+       widows: 100%;
+      }
+
+      .footer{
+        /*position: absolute;*/
+        bottom: 0;
+        width: 100%;
+      }
+
+      .dedo{
+        text-align: center;
+      }
+
+      @media (min-width: 768px) {
+        .curved-div ~ .footer{
+          display: inline-flex;
+          position: fixed;
+        }
+
+      }
+
+    </style>
+     
+    <body> 
+        <div class="container">  
+          <style> 
+            html, body{
+              padding: 0;
+              margin: 0;
+              height: 100%;
+            }
+      
+            .container{
+              display: grid;
+            }
+      
+            section{
+               width: 100%
+            }
+      
+            .logo_branco{
+              position: absolute;
+              width: 70%;
+              top: 9%;
+              left: 18%;
+              right: 15%;
+            }
+            
+            .text-center{
+              text-align: center;
+              font-weight: bold;
+            }
+            .text-center_vend{
+              text-align: center;
+            }
+            
+            p{
+              font-size: 4rem;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              margin: 0;
+            }
+      
+            .icones {
+              text-align: center;
+              display: flex;
+              justify-content: center;
+            }
+      
+            .icones a { 
+              padding: 0px;
+            }
+      
+            .icones a img{
+             widows: 100%;
+            }
+      
+            .footer{
+              /*position: absolute;*/
+              bottom: 0;
+              width: 100%;
+            }
+      
+            .dedo{
+              text-align: center;
+            }
+      
+            @media (min-width: 768px) {
+              .curved-div ~ .footer{
+                display: inline-flex;
+                position: fixed;
+              }
+      
+            }
+      
+          </style>
+           
+          <body> 
+              <div class="container">  
+                <div class="curved-div upper">
+                    <svg viewBox="0 0 1280 800">
+                      <path fill="#09337a" fill-opacity="1" d="M 1280 5 L 1280 654 C 615 697 345 758 2 246 L 1 1 c 21 0 21 0 1280 1">
+                      </path>
+                    </svg>
+                   <!-- <img src="images/pintos.png') }}" alt="" class="logo_branco"/>  --> 
+                  </div> 
+      
+                  <section> 
+      
+                    <div>
+                      <p class="text-center"> 
+                       #{ @name }
+                      </p>
+                    </div>
+                    <div>
+                      <p class="text-center_vend"> 
+                      #{ @cargo }
+                      </p>
+                    </div> 
+      
+                    <div class="icones"> 
+                      <a href="tel:#{@phone}"> <img src="http://cartaodigital.pintos.com.br/assets/telefone_png_01-80d6510680576bfa54a70c7c6a3392e0b2d26cc7a7d43aac05f1cee43cc68827.png" alt="" /> </a> 
+                      <a href="mailto:#{@email}"> <img src="http://cartaodigital.pintos.com.br/assets/email_png_01-2a4c70900e3b673838393c5864f101766e9362c0e23199a98a950b28a009492e.png" alt=""/> </a> 
+                      <a href="https://wa.me/55#{@phone}"> <img src="http://cartaodigital.pintos.com.br/assets/whats_png_01-d921b0dcb39b823ba1facdad25e9a8939fe36482da9ab9b40a6b194544c27844.png" alt="" /> </a> 
+                      <a href="https://www.instagram.com/lojaspintos/"> <img src="http://cartaodigital.pintos.com.br/assets/insta_png_2_01-1a7e4e3488b57420f4ad66e08ff5b6fe531fffeb8cd4f4241ba3fea91f530bc6.png" alt="" /> </a>
+                    </div> 
+                      
+                    
+                    <div class="dedo">
+                      <a href="#"> <img src="http://cartaodigital.pintos.com.br/assets/dedo_01_01-7289c6e8e27803645a0bb773f07506772bfc34d6bad99d71fc1fcf21fc6425b7.png" alt="" /> </a>
+                    </div>
+           
+                  </section>
+      
+                  <div class="curved-div footer">
+                    <svg viewBox="0 0 1280 290">
+                      <path fill="#09337a" fill-opacity="1" d="M 1278 298 C 385 280 387 86 2 3 L 1 298 c 21 0 21 0 1280 1"></path>
+                    </svg>
+                    <div class="bot">
+                      <button id="avatarButton" style="outline: none; display: flex; justify-content: center; align-items: center;bottom: 0; right: 0; height: 10rem; width: 10rem; -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5); -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5); box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5); border-radius: 150px; margin: 15px; z-index: 10000; cursor: pointer; overflow: hidden; border: 2px solid #006BE2; background-color: #006BE2; padding: 0;"> <img class="wc-greeting-image" src="https://people-prod-files.s3.us-west-2.amazonaws.com/20200702195606-62d94bcf-7677-4d96-8e05-a94246c84bc4.jpeg" id="botAvatar" style="display: block;width: 100%;height: 100%;object-fit: cover;"></button>
+                      <div class="dedo">
+                         <!--<img src="{{ asset('imagens/fale_com.png') }}" alt="" />-->
+                      </div>
+                    </div>
+                  </div>
+              </div>  
+        </div>  
+    
+    </body>
+
+   
+
+</html>
