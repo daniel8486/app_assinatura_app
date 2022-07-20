@@ -52,29 +52,31 @@
               <div class="dedo">
                 <%= image_tag('dedo_01_01.png', class: 'dedo', onclick: ' printPage();') %>
               </div>
-     
-            </section>
 
-            <div class="curved-div footer">
-              <svg viewBox="0 0 1280 290">
-                <path fill="#09337a" fill-opacity="1" d="M 1278 298 C 385 280 387 86 2 3 L 1 298 c 21 0 21 0 1280 1"></path>
-              </svg>
-              <div class="bot">
-                
-                <%= link_to image_tag("virtual.png", class: 'wc-greeting-image', 
-                style: 'outline: none; display: flex; justify-content: center; 
-                align-items: center;bottom: 0; right: 0; height: 10rem; width: 10rem; 
-                -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5); 
-                -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5); 
-                box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5); border-radius: 150px; 
-                margin: 15px; z-index: 10000; cursor: pointer; overflow: hidden; 
-                border: 2px solid #006BE2; background-color: #006BE2; padding: 0;'),"https://wa.me/558621074000" %>
-
-                <div class="dedo">
-                   <!--<img src="{{ asset('imagens/fale_com.png') }}" alt="" />-->
+              <div class="curved-div footer">
+                <svg viewBox="0 0 1280 290" class="footer_curved">
+                  <path fill="#09337a" fill-opacity="1" d="M 1278 298 C 385 280 387 86 2 3 L 1 298 c 21 0 21 0 1280 1"></path>
+                </svg>
+                <div class="bot">
+                  
+                  <%= link_to image_tag("virtual.png", class: 'wc-greeting-image', 
+                  style: 'outline: none; display: flex; justify-content: center; 
+                  align-items: center;bottom: 0; right: 0; height: 15vw; width: 15vw; 
+                  -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5); 
+                  -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5); 
+                  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5); border-radius: 150px; 
+                  margin: 15px; z-index: 10000; cursor: pointer; overflow: hidden; 
+                  border: 2px solid #006BE2; background-color: #006BE2; padding: 0;'),"https://wa.me/558621074000" %>
+  
+                  <div class="dedo">
+                     <!--<img src="{{ asset('imagens/fale_com.png') }}" alt="" />-->
+                  </div>
                 </div>
               </div>
-            </div>
+  
+
+            </section>
+
         </div>  
        
       <script> 
@@ -85,3 +87,6 @@
 
         </body>
         </html>
+
+
+        
