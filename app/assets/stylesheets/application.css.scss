@@ -16,10 +16,9 @@ html, body{
 
   .logo_branco{
     position: absolute;
-    width: 70%;
-    top: 9%;
-    left: 18%;
-    right: 15%;
+    width: 64%;
+    top: 7vw;
+    left: 22%;
   }
   
   .text-center{
@@ -88,9 +87,9 @@ html, body{
   @media print { 
 
     @page {
-      /*size: 4in 6in landscape;*/
-      /* size: 8.5in 11in portrait; */
-      size: 0mm 16mm 16mm 0mm;
+      /*size: 4in 6in landscape; */ 
+      /*size: 8.5in 11in portrait;*/ 
+      size: 0mm 16mm 16mm 0mm; 
     }
     
     html, body{
@@ -109,10 +108,9 @@ html, body{
   
     .logo_branco{
       position: absolute;
-      width: 70%;
-      top: 9%;
-      left: 18%;
-      right: 15%;
+      width: 64%;
+      top: 7vw;
+      left: 22%;
     }
     
     .text-center{
