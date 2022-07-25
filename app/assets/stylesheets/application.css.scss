@@ -51,12 +51,14 @@ html, body{
    width: 20%;
   }
 
-  .footer{
-    /*position: absolute;*/
+  .footer {
     display: inline-flex;
     bottom: 0;
     width: 100%;
-  }
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+}
 
   div.dedo{
     text-align: center;
@@ -67,13 +69,25 @@ html, body{
   }
 
   .bot{
-    margin-top: -100px;
-    float: right;
+    //margin-top: 10px;
+    //float: right;
+    //margin-left: 40%;
   }
 
   .footer_curved { 
     width: fit-content;
   }
+
+  .fale_conosco { 
+    text-align: center;
+    font-size: 3vw; 
+    color: #09337a;
+    width: 20%;
+    height: 2%;
+    font-weight: bold;
+    margin-top: 7%;
+  }
+
 
   @media (max-width: 468px) {
     .curved-div ~ .footer{
@@ -143,12 +157,14 @@ html, body{
      width: 20%;
     }
   
-    .footer{
-      /*position: absolute;*/
+    .footer {
       display: inline-flex;
       bottom: 0;
       width: 100%;
-    }
+      flex-wrap: nowrap;
+      flex-direction: row;
+      justify-content: center;
+  }
   
     div.dedo{
       text-align: center;
@@ -159,11 +175,20 @@ html, body{
     }
   
     .bot{
-      margin-top: -100px;
-      float: right;
+      //margin-top: 10px;
+      //margin-left: 40%;
     }
     
     .footer_curved { 
       width: 100%;
+      text-align: center;
+    }
+
+    .fale { 
+      text-align: center;
+    }
+
+    .fale .fale_conosco { 
+      color: #09337a;
     }
 }
